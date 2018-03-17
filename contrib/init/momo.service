@@ -1,0 +1,22 @@
+[Unit]
+Description=Momo's distributed currency daemon
+After=network.target
+
+[Service]
+User=momocore
+Group=momocore
+
+Type=forking
+PIDFile=/var/lib/desired/momod.pid
+ExecStart=/usr/bin/desired -daemon -pid=/var/lib/desired/momod.pid \
+-conf=/etc/momocore/momo.conf -datadir=/var/lib/desired -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Momo
+Comment=Momo P2P Cryptocurrency
+Comment[fr]=Momo, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Momo, eşten eşe kriptografik sanal para birimi
+Exec=momo-qt %u
+Terminal=false
+Type=Application
+Icon=desire128
+MimeType=x-scheme-handler/momo;
+Categories=Office;Finance;
