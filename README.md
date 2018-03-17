@@ -1,4 +1,4 @@
-Momo Core Official web
+Momo Core Official website
 
 https://www.momocash.org
 
