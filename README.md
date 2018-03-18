@@ -1,6 +1,12 @@
 MomoCash official website
-
 https://www.momocash.org
+
+the block explorer
+http://explorer.momocash.org
+
+the mining pool
+http://pool.momocash.org
+
 
 bitcointalk.org
 
