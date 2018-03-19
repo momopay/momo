@@ -5,7 +5,6 @@ the block explorer
 http://explorer.momocash.org
 
 the mining pool
-http://pool.momocash.org
 
 
 bitcointalk.org
