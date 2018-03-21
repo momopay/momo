@@ -327,7 +327,7 @@ void BitcoinGUI::createActions()
     receiveCoinsMenuAction->setToolTip(receiveCoinsMenuAction->statusTip());
 
     historyAction = new QAction(QIcon(":/icons/" + theme + "/history"), tr("&Transactions"), this);
-    historyAction->setStatusTip(tr("Browse transaction history"));
+    historyAction->setStatusTip(tr("Browse "));
     historyAction->setToolTip(historyAction->statusTip());
     historyAction->setCheckable(true);
 #ifdef Q_OS_MAC
@@ -986,12 +986,12 @@ void BitcoinGUI::setNumBlocks(int count, const QDateTime& blockDate, double nVer
         case BLOCK_SOURCE_REINDEX:
             progressBarLabel->setText(tr("Reindexing blocks on disk..."));
             break;
-        // case BLOCK_SOURCE_NONE:
-        //     if (header) {
-        //         return;
-        //     }
-        //     progressBarLabel->setText(tr("Connecting to peers..."));
-        //     break;
+        case BLOCK_SOURCE_NONE:
+            if (header) {
+                return;
+            }
+            progressBarLabel->setText(tr("Connecting to peers..."));
+            break;
     }
 
     QString tooltip;
