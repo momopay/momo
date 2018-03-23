@@ -2,11 +2,11 @@
 # -*- mode: makefile; coding: utf-8 -*-
 
 #DEB_MAKE_CHECK_TARGET = test_desire
-#build/desired::
+#build/momod::
 #	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_desire)
 
-DEB_INSTALL_EXAMPLES_desired += debian/examples/*
-DEB_INSTALL_MANPAGES_desired += debian/manpages/*
+DEB_INSTALL_EXAMPLES_momod += debian/examples/*
+DEB_INSTALL_MANPAGES_momod += debian/manpages/*
 
 %:
 	dh --with bash-completion $@

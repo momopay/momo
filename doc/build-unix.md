@@ -121,7 +121,7 @@ built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip desired" to strip the debug
+The release is built with GCC and then "strip momod" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -130,7 +130,7 @@ miniupnpc
 
 [miniupnpc](http://miniupnp.free.fr/) may be used for UPnP port mapping.  It can be downloaded from [here](
 http://miniupnp.tuxfamily.org/files/).  UPnP support is compiled in and
-turned off by default.  See the configure options for upnp behavior desired:
+turned off by default.  See the configure options for upnp behavior momod:
 
 	--without-miniupnpc      No UPnP support miniupnp not required
 	--disable-upnp-default   (the default) UPnP support turned off by default at runtime
@@ -203,7 +203,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./desired
+    	scanelf -e ./momod
 
     The output should contain:
 
@@ -218,7 +218,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./desired`
+    `scanelf -e ./momod`
 
     the output should contain:
 	STK/REL/PTL

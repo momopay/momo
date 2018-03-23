@@ -102,7 +102,7 @@ if test "x$want_boost" = "xyes"; then
 
     dnl allow for real multi-arch paths e.g. /usr/lib/x86_64-linux-gnu. Give
     dnl them priority over the other paths since, if libs are found there, they
-    dnl are almost assuredly the ones desired.
+    dnl are almost assuredly the ones momod.
     AC_REQUIRE([AC_CANONICAL_HOST])
     libsubdirs="lib/${host_cpu}-${host_os} $libsubdirs"
 

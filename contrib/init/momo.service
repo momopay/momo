@@ -7,9 +7,9 @@ User=momocore
 Group=momocore
 
 Type=forking
-PIDFile=/var/lib/desired/momod.pid
-ExecStart=/usr/bin/desired -daemon -pid=/var/lib/desired/momod.pid \
--conf=/etc/momocore/momo.conf -datadir=/var/lib/desired -disablewallet
+PIDFile=/var/lib/momod/momod.pid
+ExecStart=/usr/bin/momod -daemon -pid=/var/lib/momod/momod.pid \
+-conf=/etc/momocore/momo.conf -datadir=/var/lib/momod -disablewallet
 
 Restart=always
 PrivateTmp=true

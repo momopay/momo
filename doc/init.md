@@ -1,36 +1,36 @@
-Sample init scripts and service configuration for desired
+Sample init scripts and service configuration for momod
 ==========================================================
 
 Sample scripts and configuration files for systemd, Upstart and OpenRC
 can be found in the contrib/init folder.
 
-    contrib/init/desired.service:    systemd service unit configuration
-    contrib/init/desired.openrc:     OpenRC compatible SysV style init script
-    contrib/init/desired.openrcconf: OpenRC conf.d file
-    contrib/init/desired.conf:       Upstart service configuration file
-    contrib/init/desired.init:       CentOS compatible SysV style init script
+    contrib/init/momod.service:    systemd service unit configuration
+    contrib/init/momod.openrc:     OpenRC compatible SysV style init script
+    contrib/init/momod.openrcconf: OpenRC conf.d file
+    contrib/init/momod.conf:       Upstart service configuration file
+    contrib/init/momod.init:       CentOS compatible SysV style init script
 
 1. Service User
 ---------------------------------
 
 All three Linux startup configurations assume the existence of a "momocore" user
 and group.  They must be created before attempting to use these scripts.
-The OS X configuration assumes desired will be set up for the current user.
+The OS X configuration assumes momod will be set up for the current user.
 
 2. Configuration
 ---------------------------------
 
-At a bare minimum, desired requires that the rpcpassword setting be set
+At a bare minimum, momod requires that the rpcpassword setting be set
 when running as a daemon.  If the configuration file does not exist or this
-setting is not set, desired will shutdown promptly after startup.
+setting is not set, momod will shutdown promptly after startup.
 
 This password does not have to be remembered or typed as it is mostly used
-as a fixed token that desired and client programs read from the configuration
+as a fixed token that momod and client programs read from the configuration
 file, however it is recommended that a strong and secure password be used
 as this password is security critical to securing the wallet should the
 wallet be enabled.
 
-If desired is run with the "-server" flag (set by default), and no rpcpassword is set,
+If momod is run with the "-server" flag (set by default), and no rpcpassword is set,
 it will use a special cookie file for authentication. The cookie is generated with random
 content when the daemon starts, and deleted when it exits. Read access to this file
 controls who can access it through RPC.
@@ -38,7 +38,7 @@ controls who can access it through RPC.
 By default the cookie is stored in the data directory, but it's location can be overridden
 with the option '-rpccookiefile'.
 
-This allows for running desired without having to do any manual configuration.
+This allows for running momod without having to do any manual configuration.
 
 `conf`, `pid`, and `wallet` accept relative paths which are interpreted as
 relative to the data directory. `wallet` *only* supports relative paths.
@@ -53,21 +53,21 @@ see `contrib/debian/examples/momo.conf`.
 
 All three configurations assume several paths that might need to be adjusted.
 
-Binary:              `/usr/bin/desired`  
+Binary:              `/usr/bin/momod`  
 Configuration file:  `/etc/momocore/momo.conf`  
-Data directory:      `/var/lib/desired`  
-PID file:            `/var/run/desired/momod.pid` (OpenRC and Upstart) or `/var/lib/desired/momod.pid` (systemd)  
-Lock file:           `/var/lock/subsys/desired` (CentOS)  
+Data directory:      `/var/lib/momod`  
+PID file:            `/var/run/momod/momod.pid` (OpenRC and Upstart) or `/var/lib/momod/momod.pid` (systemd)  
+Lock file:           `/var/lock/subsys/momod` (CentOS)  
 
 The configuration file, PID directory (if applicable) and data directory
 should all be owned by the momocore user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-momocore user and group.  Access to momo-cli and other desired rpc clients
+momocore user and group.  Access to momo-cli and other momod rpc clients
 can then be controlled by group membership.
 
 3b) Mac OS X
 
-Binary:              `/usr/local/bin/desired`  
+Binary:              `/usr/local/bin/momod`  
 Configuration file:  `~/Library/Application Support/MOMOCore/momo.conf`  
 Data directory:      `~/Library/Application Support/MOMOCore`
 Lock file:           `~/Library/Application Support/MOMOCore/.lock`
@@ -81,19 +81,19 @@ Installing this .service file consists of just copying it to
 /usr/lib/systemd/system directory, followed by the command
 `systemctl daemon-reload` in order to update running systemd configuration.
 
-To test, run `systemctl start desired` and to enable for system startup run
-`systemctl enable desired`
+To test, run `systemctl start momod` and to enable for system startup run
+`systemctl enable momod`
 
 4b) OpenRC
 
-Rename desired.openrc to desired and drop it in /etc/init.d.  Double
+Rename momod.openrc to momod and drop it in /etc/init.d.  Double
 check ownership and permissions and make it executable.  Test it with
-`/etc/init.d/desired start` and configure it to run on startup with
-`rc-update add desired`
+`/etc/init.d/momod start` and configure it to run on startup with
+`rc-update add momod`
 
 4c) Upstart (for Debian/Ubuntu based distributions)
 
-Drop desired.conf in /etc/init.  Test by running `service desired start`
+Drop momod.conf in /etc/init.  Test by running `service momod start`
 it will automatically start on reboot.
 
 NOTE: This script is incompatible with CentOS 5 and Amazon Linux 2014 as they
@@ -101,21 +101,21 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 
 4d) CentOS
 
-Copy desired.init to /etc/init.d/desired. Test by running `service desired start`.
+Copy momod.init to /etc/init.d/momod. Test by running `service momod start`.
 
-Using this script, you can adjust the path and flags to the desired program by
+Using this script, you can adjust the path and flags to the momod program by
 setting the DESIRED and FLAGS environment variables in the file
-/etc/sysconfig/desired. You can also use the DAEMONOPTS environment variable here.
+/etc/sysconfig/momod. You can also use the DAEMONOPTS environment variable here.
 
 4e) Mac OS X
 
-Copy org.momo.desired.plist into ~/Library/LaunchAgents. Load the launch agent by
-running `launchctl load ~/Library/LaunchAgents/org.momo.desired.plist`.
+Copy org.momo.momod.plist into ~/Library/LaunchAgents. Load the launch agent by
+running `launchctl load ~/Library/LaunchAgents/org.momo.momod.plist`.
 
-This Launch Agent will cause desired to start whenever the user logs in.
+This Launch Agent will cause momod to start whenever the user logs in.
 
-NOTE: This approach is intended for those wanting to run desired as the current user.
-You will need to modify org.momo.desired.plist if you intend to use it as a
+NOTE: This approach is intended for those wanting to run momod as the current user.
+You will need to modify org.momo.momod.plist if you intend to use it as a
 Launch Daemon with a dedicated momocore user.
 
 5. Auto-respawn

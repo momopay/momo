@@ -29,7 +29,7 @@ class RawTransactionsTest(BitcoinTestFramework):
 
         min_relay_tx_fee = self.nodes[0].getnetworkinfo()['relayfee']
         # This test is not meant to test fee estimation and we'd like
-        # to be sure all txs are sent at a consistent desired feerate
+        # to be sure all txs are sent at a consistent momod feerate
         for node in self.nodes:
             node.settxfee(min_relay_tx_fee)
 
@@ -446,7 +446,7 @@ class RawTransactionsTest(BitcoinTestFramework):
 
         self.nodes = start_nodes(4, self.options.tmpdir, [['-usehd=1'], ['-usehd=1'], ['-usehd=1'], ['-usehd=1']])
         # This test is not meant to test fee estimation and we'd like
-        # to be sure all txs are sent at a consistent desired feerate
+        # to be sure all txs are sent at a consistent momod feerate
         for node in self.nodes:
             node.settxfee(min_relay_tx_fee)
 

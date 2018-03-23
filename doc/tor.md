@@ -37,11 +37,11 @@ outgoing connections be anonymized, but more is possible.
 An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
 
-	./desired -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=ssapp53tmftyjmjb.onion
+	./momod -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=ssapp53tmftyjmjb.onion
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-	./desired -proxy=127.0.0.1:9050
+	./momod -proxy=127.0.0.1:9050
 
 
 2. Run a Momo Core hidden server
@@ -56,7 +56,7 @@ config file):
 	HiddenServicePort 19919 127.0.0.1:19919
 
 The directory can be different of course, but (both) port numbers should be equal to
-your desired's P2P listen port (9919 by default).
+your momod's P2P listen port (9919 by default).
 
 	-externalip=X   You can tell Momo Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
@@ -78,25 +78,25 @@ your desired's P2P listen port (9919 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-	./desired -proxy=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -listen
+	./momod -proxy=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -listen
 
 (obviously, replace the Onion address with your own). It should be noted that you still
 listen on all devices and another node could establish a clearnet connection, when knowing
 your address. To mitigate this, additionally bind the address of your Tor proxy:
 
-	./desired ... -bind=127.0.0.1
+	./momod ... -bind=127.0.0.1
 
 If you don't care too much about hiding your node, and want to be reachable on IPv4
 as well, use `discover` instead:
 
-	./desired ... -discover
+	./momod ... -discover
 
 and open port 9919 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-	./desired -onion=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -discover
+	./momod -onion=127.0.0.1:9050 -externalip=ssapp53tmftyjmjb.onion -discover
 
 
 3. List of known Momo Core Tor relays

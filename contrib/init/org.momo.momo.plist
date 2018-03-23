@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.momo.desired</string>
+	<string>org.momo.momod</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/desired</string>
+		<string>/usr/local/bin/momod</string>
 		<string>-daemon</string>
 	</array>
 	<key>RunAtLoad</key>

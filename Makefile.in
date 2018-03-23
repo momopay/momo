@@ -652,7 +652,7 @@ uninstall-pkgconfigDATA:
 # To change the values of 'make' variables: instead of editing Makefiles,
 # (1) if the variable is set in 'config.status', edit 'config.status'
 #     (which will cause the Makefiles to be regenerated when you run 'make');
-# (2) otherwise, pass the desired values on the 'make' command line.
+# (2) otherwise, pass the momod values on the 'make' command line.
 $(am__recursive_targets):
 	@fail=; \
 	if $(am__make_keepgoing); then \

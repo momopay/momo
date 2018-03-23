@@ -247,7 +247,7 @@ def FromHex(obj, hex_string):
 def ToHex(obj):
     return hexlify(obj.serialize()).decode('ascii')
 
-# Objects that map to desired objects, which can be serialized/deserialized
+# Objects that map to momod objects, which can be serialized/deserialized
 
 class CAddress(object):
     def __init__(self):
@@ -939,7 +939,7 @@ class msg_sendheaders(object):
 # getheaders message has
 # number of entries
 # vector of hashes
-# hash_stop (hash of last desired block header, 0 to get as many as possible)
+# hash_stop (hash of last momod block header, 0 to get as many as possible)
 class msg_getheaders(object):
     command = b"getheaders"
 
@@ -972,7 +972,7 @@ class msg_headers(object):
         self.headers = []
 
     def deserialize(self, f):
-        # comment in desired indicates these should be deserialized as blocks
+        # comment in momod indicates these should be deserialized as blocks
         blocks = deser_vector(f, CBlock)
         for x in blocks:
             self.headers.append(CBlockHeader(x))

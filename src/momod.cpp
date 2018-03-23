@@ -84,7 +84,7 @@ bool AppInit(int argc, char* argv[])
         else
         {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  desired [options]                     " + _("Start Momo Core Daemon") + "\n";
+                  "  momod [options]                     " + _("Start Momo Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -136,7 +136,7 @@ bool AppInit(int argc, char* argv[])
 
         if (fCommandLine)
         {
-            fprintf(stderr, "Error: There is no RPC client functionality in desired anymore. Use the momo-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in momod anymore. Use the momo-cli utility instead.\n");
             exit(EXIT_FAILURE);
         }
 #ifndef WIN32
@@ -194,7 +194,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect desired signal handlers
+    // Connect momod signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

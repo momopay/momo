@@ -12,7 +12,7 @@ The following are some helpful notes on how to run Momo on your native platform.
 Unpack the files into a directory and run:
 
 - `bin/momo-qt` (GUI) or
-- `bin/desired` (headless)
+- `bin/momod` (headless)
 
 ### Windows
 

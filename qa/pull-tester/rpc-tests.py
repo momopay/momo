@@ -63,7 +63,7 @@ for arg in sys.argv[1:]:
 #Set env vars
 buildDir = BUILDDIR
 if "DESIRED" not in os.environ:
-    os.environ["DESIRED"] = buildDir + '/src/desired' + EXEEXT
+    os.environ["DESIRED"] = buildDir + '/src/momod' + EXEEXT
 if "MOCCLI" not in os.environ:
     os.environ["DESIRECLI"] = buildDir + '/src/momo-cli' + EXEEXT
 

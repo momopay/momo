@@ -167,7 +167,7 @@ Fee estimation changes
 This release improves the algorithm used for fee estimation.  Previously, -1
 was returned when there was insufficient data to give an estimate.  Now, -1
 will also be returned when there is no fee or priority high enough for the
-desired confirmation target. In those cases, it can help to ask for an estimate
+momod confirmation target. In those cases, it can help to ask for an estimate
 for a higher target number of blocks. It is not uncommon for there to be no
 fee or priority high enough to be reliably (85%) included in the next block and
 for this reason, the default for `-txconfirmtarget=n` has changed from 1 to 2.

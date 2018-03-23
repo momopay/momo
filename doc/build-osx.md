@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build desired (headless client) for OSX.
+This guide will show you how to build momod (headless client) for OSX.
 
 Notes
 -----
@@ -55,7 +55,7 @@ NOTE: Building with Qt4 is still supported, however, doing so could result in a 
 
         make check
 
-4.  (Optional) You can also install desired to your path:
+4.  (Optional) You can also install momod to your path:
 
         make install
 
@@ -77,11 +77,11 @@ Download Qt Creator from https://www.qt.io/download/. Download the "community ed
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `desired` for your own use.
+You can ignore this section if you are building `momod` for your own use.
 
-desired/momo-cli binaries are not included in the Momo-Qt.app bundle.
+momod/momo-cli binaries are not included in the Momo-Qt.app bundle.
 
-If you are building `desired` or `Momo Core` for others, your build machine should be set up
+If you are building `momod` or `Momo Core` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -96,10 +96,10 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./desired`, provided that you are still in the `src`
+It's now available at `./momod`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./desired` to get the filename where it should be put, or just try these
+Run `./momod` to get the filename where it should be put, or just try these
 commands:
 
     echo -e "rpcuser=desirerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/MOMOCore/momo.conf"
@@ -114,6 +114,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./desired -daemon # to start the momo daemon.
+    ./momod -daemon # to start the momo daemon.
     ./momo-cli --help  # for a list of command-line options.
     ./momo-cli help    # When the daemon is running, to get a list of RPC commands

@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between momo-cli and desired)
+ * CBaseChainParams defines the base parameters (shared between momo-cli and momod)
  * of a given instance of the Momo system.
  */
 class CBaseChainParams

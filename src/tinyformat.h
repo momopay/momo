@@ -74,7 +74,7 @@
 // -----------------------------
 //
 // Simulating variadic templates in C++98 is pretty painful since it requires
-// writing out the same function for each desired number of arguments.  To make
+// writing out the same function for each momod number of arguments.  To make
 // this bearable tinyformat comes with a set of macros which are used
 // internally to generate the API, but which may also be used in user code.
 //
@@ -82,7 +82,7 @@
 // TINYFORMAT_PASSARGS(n) will generate a list of n argument types,
 // type/name pairs and argument names respectively when called with an integer
 // n between 1 and 16.  We can use these to define a macro which generates the
-// desired user defined function with n arguments.  To generate all 16 user
+// momod user defined function with n arguments.  To generate all 16 user
 // defined function bodies, use the macro TINYFORMAT_FOREACH_ARGNUM.  For an
 // example, see the implementation of printf() at the end of the source file.
 //
@@ -252,7 +252,7 @@ struct convertToInt<T,true>
 
 //------------------------------------------------------------------------------
 // Variable formatting functions.  May be overridden for user-defined types if
-// desired.
+// momod.
 
 
 // Format a value into a stream. Called from format() for all types by default.

@@ -306,7 +306,7 @@ if this is 1.
 - `-datacarriersize=n` : Maximum size, in bytes, we consider acceptable for
 "data carrier" outputs.
 
-The relay policy has changed to more properly implement the desired behavior of not 
+The relay policy has changed to more properly implement the momod behavior of not 
 relaying free (or very low fee) transactions unless they have a priority above the 
 AllowFreeThreshold(), in which case they are relayed subject to the rate limiter.
 

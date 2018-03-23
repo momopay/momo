@@ -43,7 +43,7 @@ build should represent an exact single payload.
 
 Each package must define its source location and checksum. The build will fail
 if the fetched source does not match. Sources may be pre-seeded and/or cached
-as desired.
+as momod.
 
 ### Self-cleaning
 

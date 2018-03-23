@@ -31,9 +31,9 @@ Possible options:
 
 ```
   -h, --help            show this help message and exit
-  --nocleanup           Leave desireds and test.* datadir on exit or error
-  --noshutdown          Don't stop desireds after the test execution
-  --srcdir=SRCDIR       Source directory containing desired/momo-cli
+  --nocleanup           Leave momods and test.* datadir on exit or error
+  --noshutdown          Don't stop momods after the test execution
+  --srcdir=SRCDIR       Source directory containing momod/momo-cli
                         (default: ../../src)
   --tmpdir=TMPDIR       Root directory for datadirs
   --tracerpc            Print out all RPC calls as they are made
@@ -58,7 +58,7 @@ to recover with:
 
 ```bash
 rm -rf cache
-killall desired
+killall momod
 ```
 
 Writing tests

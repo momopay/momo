@@ -1,8 +1,8 @@
 
 Debian
 ====================
-This directory contains files used to package desired/momo-qt
-for Debian-based Linux systems. If you compile desired/momo-qt yourself, there are some useful files here.
+This directory contains files used to package momod/momo-qt
+for Debian-based Linux systems. If you compile momod/momo-qt yourself, there are some useful files here.
 
 ## momo: URI support ##
 

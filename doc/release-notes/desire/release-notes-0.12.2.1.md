@@ -20,7 +20,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/Momo-Qt (on Mac) or
-desired/momo-qt (on Linux).
+momod/momo-qt (on Linux).
 
 Downgrade warning
 -----------------
@@ -78,7 +78,7 @@ New: `assumevalid`, `blocksonly`, `reindex-chainstate`
 
 Experimental: `usehd`, `mnemonic`, `mnemonicpassphrase`, `hdseed`
 
-See `Help -> Command-line options` in Qt wallet or `desired --help` for more info.
+See `Help -> Command-line options` in Qt wallet or `momod --help` for more info.
 
 PrivateSend improvements
 ------------------------

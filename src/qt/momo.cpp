@@ -101,7 +101,7 @@ static std::string Translate(const char* psz)
 static QString GetLangTerritory()
 {
     QSettings settings;
-    // Get desired locale (e.g. "de_DE")
+    // Get momod locale (e.g. "de_DE")
     // 1) System default language
     QString lang_territory = QLocale::system().name();
     // 2) Language from QSettings
@@ -122,7 +122,7 @@ static void initTranslations(QTranslator &qtTranslatorBase, QTranslator &qtTrans
     QApplication::removeTranslator(&translatorBase);
     QApplication::removeTranslator(&translator);
 
-    // Get desired locale (e.g. "de_DE")
+    // Get momod locale (e.g. "de_DE")
     // 1) System default language
     QString lang_territory = GetLangTerritory();
 

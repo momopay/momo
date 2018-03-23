@@ -35,7 +35,7 @@ class CTxMemPool;
  * the last bucket to pass the test.   The average fee of transactions in this
  * bucket will give you an indication of the lowest fee you can put on a
  * transaction and still have a sufficiently high chance of being confirmed
- * within your desired 5 blocks.
+ * within your momod 5 blocks.
  *
  * When a transaction enters the mempool or is included within a block we
  * decide whether it can be used as a data point for fee estimation, priority

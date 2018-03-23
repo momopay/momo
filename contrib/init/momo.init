@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  desired The Momo Core server.
+#  momod The Momo Core server.
 #
 #
 # chkconfig: 345 80 20
-# description: desired
-# processname: desired
+# description: momod
+# processname: momod
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/desired, see below
-if [ -f /etc/sysconfig/desired ]; then
-        . /etc/sysconfig/desired
+# you can override defaults in /etc/sysconfig/momod, see below
+if [ -f /etc/sysconfig/momod ]; then
+        . /etc/sysconfig/momod
 fi
 
 RETVAL=0
 
-prog=desired
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/desired
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/desired}
+prog=momod
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/momod
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/momod}
 
-# desired defaults to /usr/bin/desired, override with BITCOIND_BIN
-desired=${BITCOIND_BIN-/usr/bin/desired}
+# momod defaults to /usr/bin/momod, override with BITCOIND_BIN
+momod=${BITCOIND_BIN-/usr/bin/momod}
 
-# desired opts default to -disablewallet, override with BITCOIND_OPTS
-desired_opts=${BITCOIND_OPTS--disablewallet}
+# momod opts default to -disablewallet, override with BITCOIND_OPTS
+momod_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $desired $desired_opts
+    daemon $DAEMONOPTS $momod $momod_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

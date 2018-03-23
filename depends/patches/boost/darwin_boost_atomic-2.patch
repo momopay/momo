@@ -35,21 +35,21 @@ index a130590..4af99a1 100644
          memory_order success_order,
          memory_order failure_order) volatile BOOST_NOEXCEPT
      {
--        storage_type expected_s = 0, desired_s = 0;
-+        storage_type expected_s, desired_s;
+-        storage_type expected_s = 0, momod_s = 0;
++        storage_type expected_s, momod_s;
 +        memset(&expected_s, 0, sizeof(expected_s));
-+        memset(&desired_s, 0, sizeof(desired_s));
++        memset(&momod_s, 0, sizeof(momod_s));
          memcpy(&expected_s, &expected, sizeof(value_type));
-         memcpy(&desired_s, &desired, sizeof(value_type));
-         const bool success = __atomic_compare_exchange_n(&v_, &expected_s, desired_s, false,
+         memcpy(&momod_s, &momod, sizeof(value_type));
+         const bool success = __atomic_compare_exchange_n(&v_, &expected_s, momod_s, false,
 @@ -1010,7 +1015,9 @@ class base_atomic<T, void, 16, Sign>
          memory_order success_order,
          memory_order failure_order) volatile BOOST_NOEXCEPT
      {
--        storage_type expected_s = 0, desired_s = 0;
-+        storage_type expected_s, desired_s;
+-        storage_type expected_s = 0, momod_s = 0;
++        storage_type expected_s, momod_s;
 +        memset(&expected_s, 0, sizeof(expected_s));
-+        memset(&desired_s, 0, sizeof(desired_s));
++        memset(&momod_s, 0, sizeof(momod_s));
          memcpy(&expected_s, &expected, sizeof(value_type));
-         memcpy(&desired_s, &desired, sizeof(value_type));
-         const bool success = __atomic_compare_exchange_n(&v_, &expected_s, desired_s, true,
+         memcpy(&momod_s, &momod, sizeof(value_type));
+         const bool success = __atomic_compare_exchange_n(&v_, &expected_s, momod_s, true,
