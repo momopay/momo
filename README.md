@@ -6,7 +6,7 @@ The exchange rate of  BTC/MOC is 1:9000
 pay BTC: 1ESWawzFjKEBqcbj79Z2M42u2HxmejWbYG  get your MOC
 It will 10x profit
 
-If you have interest in MomoCash please feel free to contact me.
+If you have interest in MomoCash please feel free to contact me. email:alemic@momocash.org
 
 MomoCash official website
 
