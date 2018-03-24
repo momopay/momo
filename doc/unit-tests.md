@@ -6,9 +6,9 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the desired tests manually, launch `src/test/test_desire`.
+To run the momod tests manually, launch `src/test/test_desire`.
 
-To add more desired tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more momod tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
