@@ -52,7 +52,7 @@ static void noui_InitMessage(const std::string& message)
 
 void noui_connect()
 {
-    // Connect desired signal handlers
+    // Connect momod signal handlers
     uiInterface.ThreadSafeMessageBox.connect(noui_ThreadSafeMessageBox);
     uiInterface.ThreadSafeQuestion.connect(noui_ThreadSafeQuestion);
     uiInterface.InitMessage.connect(noui_InitMessage);

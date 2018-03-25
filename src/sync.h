@@ -80,7 +80,7 @@ typedef AnnotatedMixin<boost::recursive_mutex> CCriticalSection;
 /** Wrapped boost mutex: supports waiting but not recursive locking */
 typedef AnnotatedMixin<boost::mutex> CWaitableCriticalSection;
 
-/** Just a typedef for boost::condition_variable, can be wrapped later if desired */
+/** Just a typedef for boost::condition_variable, can be wrapped later if momod */
 typedef boost::condition_variable CConditionVariable;
 
 #ifdef DEBUG_LOCKORDER
