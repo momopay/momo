@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+src/chainparams.cpp
+src/chainparams.cpp
+src/chainparams.cpp
+src/chainparams.cpp
+src/chainparams.cpp
+src/chainparams.cpp

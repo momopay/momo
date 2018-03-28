@@ -56,11 +56,7 @@ config file):
 	HiddenServicePort 17717 127.0.0.1:17717
 
 The directory can be different of course, but (both) port numbers should be equal to
-<<<<<<< HEAD
 your momod's P2P listen port (7717 by default).
-=======
-your momod's P2P listen port (9919 by default).
->>>>>>> 73901c5f345da3e2585c9c4f0dc9353091161fee
 
 	-externalip=X   You can tell Momo Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
