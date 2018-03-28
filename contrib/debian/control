@@ -25,8 +25,8 @@ Build-Depends: debhelper,
  python
 Standards-Version: 3.9.2
 Homepage: https://www.momo.org/
-Vcs-Git: git://github.com/desirepay/momo.git
-Vcs-Browser: https://github.com/desirepay/momo
+Vcs-Git: git://github.com/momopay/momo.git
+Vcs-Browser: https://github.com/momopay/momo
 
 Package: momod
 Architecture: any

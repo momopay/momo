@@ -24,9 +24,9 @@ Drag Momo-Qt to your applications folder, and then run Momo-Qt.
 
 ### Need Help?
 
-* See the [Momo documentation](https://desirepay.atlassian.net/wiki/display/DOC)
+* See the [Momo documentation](https://momopay.atlassian.net/wiki/display/DOC)
 for help and more information.
-* Ask for help on [#desirepay](http://webchat.freenode.net?channels=desirepay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=desirepay).
+* Ask for help on [#momopay](http://webchat.freenode.net?channels=momopay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=momopay).
 * Ask for help on the [DesireTalk](https://desiretalk.org/) forums.
 
 Building
@@ -58,7 +58,7 @@ The Momo Core repo's [root README](/README.md) contains relevant information on 
 
 ### Resources
 * Discuss on the [DesireTalk](https://desiretalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#desirepay](http://webchat.freenode.net/?channels=desirepay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=desirepay).
+* Discuss on [#momopay](http://webchat.freenode.net/?channels=momopay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=momopay).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

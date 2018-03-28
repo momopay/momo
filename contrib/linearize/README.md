@@ -3,7 +3,7 @@ Construct a linear, no-fork, best version of the blockchain.
 
 ## Step 0: Install desire_hash
 
-https://github.com/desirepay/desire_hash
+https://github.com/momopay/desire_hash
 
 ## Step 1: Download hash list
 

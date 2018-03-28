@@ -71,7 +71,7 @@
         <string>application/x-momo-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>desirepaymentrequest</string>
+          <string>momopaymentrequest</string>
         </array>
       </dict>
     </dict>
