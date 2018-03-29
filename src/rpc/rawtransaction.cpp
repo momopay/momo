@@ -496,7 +496,7 @@ UniValue decoderawtransaction(const UniValue& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"DExeHtoRwqNu2SKwmUdJSbbw4T4HYpFe8N\"   (string) Momo address\n"
+            "           \"MKwM5xDFx6BBnL6GZtoprcY317NiYuDKNK\"   (string) Momo address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
