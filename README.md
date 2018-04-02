@@ -2,7 +2,10 @@ This project is sponsored by Momo Foundation && Momo Community
 
 The MomoCash(MOC) will list in Encrypt currency exchange The exchange rate of BTC/MOC is 1:9000
 
-pay BTC: 1ESWawzFjKEBqcbj79Z2M42u2HxmejWbYG get your MOC It will 10x profit
+Masternode Offer:
+https://docs.google.com/forms/d/18hIrz9AC31_ti3gnDV_vVgFT55-fz2P1VvWf2Ue5zBk/viewform
+
+get your MOC It will 100x profit
 
 If you have interest in MomoCash please feel free to contact me. email:alemic@momocash.org
 
