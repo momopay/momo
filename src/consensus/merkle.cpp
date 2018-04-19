@@ -36,6 +36,8 @@
        merkle root. Assuming no double-SHA256 collisions, this will detect all
        known ways of changing the transactions without affecting the merkle
        root.
+       use test data build a merkle tree
+       https://github.com/momopay/merkle_tree
 */
 
 /* This implements a constant-space merkle root/path calculator, limited to 2^32 leaves. */
