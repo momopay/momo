@@ -232,7 +232,7 @@
     <name>BitcoinGUI</name>
     <message>
         <source>Momo Core</source>
-        <translation>MOMO币核心</translation>
+        <translation>MomoCash</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -284,11 +284,11 @@
     </message>
     <message>
         <source>&amp;About Momo Core</source>
-        <translation>&amp;关于MOMO币核心</translation>
+        <translation>&amp;关于MomoCash</translation>
     </message>
     <message>
         <source>Show information about Momo Core</source>
-        <translation>显示关于MOMO币核心信息</translation>
+        <translation>显示关于MomoCash信息</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -452,7 +452,7 @@
     </message>
     <message>
         <source>Momo Core client</source>
-        <translation>MOMO币核心客户端</translation>
+        <translation>MomoCash客户端</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
@@ -464,7 +464,7 @@
     </message>
     <message>
         <source>Show the Momo Core help message to get a list with possible Momo command-line options</source>
-        <translation>打开MOMO币核心帮助信息取得可使用的命令行列表</translation>
+        <translation>打开MomoCash帮助信息取得可使用的命令行列表</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -990,7 +990,7 @@ Address: %4
     <name>HelpMessageDialog</name>
     <message>
         <source>Momo Core</source>
-        <translation>MOMO币核心</translation>
+        <translation>MomoCash</translation>
     </message>
     <message>
         <source>version</source>
@@ -1002,7 +1002,7 @@ Address: %4
     </message>
     <message>
         <source>About Momo Core</source>
-        <translation>关于 MOMO币核心</translation>
+        <translation>关于 MomoCash</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1050,15 +1050,15 @@ Address: %4
     </message>
     <message>
         <source>Welcome to Momo Core.</source>
-        <translation>欢迎来到MOMO币核心。</translation>
+        <translation>欢迎来到MomoCash。</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where Momo Core will store its data.</source>
-        <translation>此次为第一次程序启动，你可以选择储存MOMO币核心数据的路径。</translation>
+        <translation>此次为第一次程序启动，你可以选择储存MomoCash数据的路径。</translation>
     </message>
     <message>
         <source>Momo Core will download and store a copy of the Momo block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>MOMO币核心将会下载并存储MOMO币数据链。至少有%1GB的数据会保存到此路径下，并且随着时间增长。钱包文件也将存储到此路径下。</translation>
+        <translation>MomoCash将会下载并存储MOMO币数据链。至少有%1GB的数据会保存到此路径下，并且随着时间增长。钱包文件也将存储到此路径下。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1070,7 +1070,7 @@ Address: %4
     </message>
     <message>
         <source>Momo Core</source>
-        <translation>MOMO币核心</translation>
+        <translation>MomoCash</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -2580,7 +2580,7 @@ https://www.transifex.com/projects/p/momo/</translation>
     <name>ShutdownWindow</name>
     <message>
         <source>Momo Core is shutting down...</source>
-        <translation>MOMO币核心正在关闭...</translation>
+        <translation>MomoCash正在关闭...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2730,7 +2730,7 @@ https://www.transifex.com/projects/p/momo/</translation>
     <name>SplashScreen</name>
     <message>
         <source>Momo Core</source>
-        <translation>MOMO币核心</translation>
+        <translation>MomoCash</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2742,7 +2742,7 @@ https://www.transifex.com/projects/p/momo/</translation>
     </message>
     <message>
         <source>The Momo Core developers</source>
-        <translation>MOMO币核心开发人员</translation>
+        <translation>MomoCash开发人员</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3308,7 +3308,7 @@ https://www.transifex.com/projects/p/momo/</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. Momo Core is probably already running.</source>
-        <translation>不能获得锁定的数据目录 %s. MOMO币核心可能已经在运行。</translation>
+        <translation>不能获得锁定的数据目录 %s. MomoCash可能已经在运行。</translation>
     </message>
     <message>
         <source>Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
@@ -3340,7 +3340,7 @@ https://www.transifex.com/projects/p/momo/</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. Momo Core is probably already running.</source>
-        <translation>无法绑定%s此计算机. MOMO币核心应该已经在运行中了.</translation>
+        <translation>无法绑定%s此计算机. MomoCash应该已经在运行中了.</translation>
     </message>
     <message>
         <source>Unable to locate enough Darksend denominated funds for this transaction.</source>
@@ -3604,7 +3604,7 @@ https://www.transifex.com/projects/p/momo/</translation>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Momo Core will not work properly.</source>
-        <translation>警告: 请检查电脑日期和时间是否正确！MOMO币核心没办法在时钟不准的情况下正常运作。</translation>
+        <translation>警告: 请检查电脑日期和时间是否正确！MomoCash没办法在时钟不准的情况下正常运作。</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3686,7 +3686,7 @@ https://www.transifex.com/projects/p/momo/</translation>
     </message>
     <message>
         <source>Error loading wallet.dat: Wallet requires newer version of Momo Core</source>
-        <translation>读取钱包文件错误: 需要较为新版本的MOMO币核心来读取钱包</translation>
+        <translation>读取钱包文件错误: 需要较为新版本的MomoCash来读取钱包</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -3743,7 +3743,7 @@ https://www.transifex.com/projects/p/momo/</translation>
     </message>
     <message>
         <source>Initialization sanity check failed. Momo Core is shutting down.</source>
-        <translation>初始化检查失败。MOMO币核心正在关闭。</translation>
+        <translation>初始化检查失败。MomoCash正在关闭。</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -3940,7 +3940,7 @@ https://www.transifex.com/projects/p/momo/</translation>
     <message>
         <source>Wallet needed to be rewritten: restart Momo Core to complete</source>
         <translation>錢包需要重寫: 請重新啓動達世幣核心來完成
-钱包需要重写: 请重新启动MOMO币核心来完成</translation>
+钱包需要重写: 请重新启动MomoCash来完成</translation>
     </message>
     <message>
         <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
