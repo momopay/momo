@@ -51,6 +51,7 @@ Copy this key somewhere. It will be referred as masternodeprivkey.
 
 Next, you have to go to the data directory of your main wallet (in Linux it’s located at /home/user/.momocore) or you can open it by wallet GUI by Tools - Open masternode configuration file. So type :
 
+port base on real port
 MN1 IP:7717 masternodeprivkey tx_id digit
 
 Put your data correctly, save it and close. Restart your main wallet.
@@ -164,6 +165,6 @@ I hope this guide was usefull to you. You can ask me some more questions on the 
 
 If you liked my work and want to thank me i’ll be happy for a tip :)
 
-momo address donations : MJkgRZG7k44eCNusnBd48nrFeXbS61TgGn
+momo address donations : MS24tp5vxNLP6mNGrra4r9JM16h6SnDfTk
 
 any question,Please contact: alemic@momocash.org
