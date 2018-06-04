@@ -52,7 +52,7 @@ Copy this key somewhere. It will be referred as masternodeprivkey.
 Next, you have to go to the data directory of your main wallet (in Linux it’s located at /home/user/.momocore) or you can open it by wallet GUI by Tools - Open masternode configuration file. So type :
 
 port base on real port
-MN1 IP:7717 masternodeprivkey tx_id digit
+MN1 IP:7777 masternodeprivkey tx_id digit
 
 Put your data correctly, save it and close. Restart your main wallet.
 
@@ -103,17 +103,17 @@ server=1
 daemon=1
 rpcport=6615
 staking=0
-externalip=IP:7717
+externalip=IP:7777
 masternode=1
 masternodeprivkey=masternodeprivkey
 
-You need to change IP to your VPS IP address, the masternodeprivkey is the one that you got from the main wallet. Choose whatever you like for user and password. Note that the port should be 7717 for all momo masternodes and rpcport is 6615 for sentinel.
+You need to change IP to your VPS IP address, the masternodeprivkey is the one that you got from the main wallet. Choose whatever you like for user and password. Note that the port should be 7777 for all momo masternodes and rpcport is 6615 for sentinel.
 
 Type Ctrl + X => Y => Enter. The file momo.conf is now saved.
 
-If you have a firewall running, you need to open the 7717 and 6615 port :
+If you have a firewall running, you need to open the 7777 and 6615 port :
 
-sudo ufw allow 7717/tcp
+sudo ufw allow 7777/tcp
 sudo ufw allow 6615/tcp
 
 Now start again your masternode wallet by navigating through your momo folder.
